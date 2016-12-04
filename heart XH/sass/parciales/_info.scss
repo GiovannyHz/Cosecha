@@ -1,24 +1,30 @@
 header{
-  .contenedor-info {                                     // datos del ministerio
-    .info-datos {                                              //.info-datos(ul)
-      background:#ECf0f1;
+  .contenedor-info {                    // datos del ministerio
+    @include from-to(320px,767px)       // cambios de Estilos
+      {  display:none;  }
+
+    @include from-to(768px,1023px)
+      {  background-color:$color1;
+         color:$color_base;  }
+
+    @include from(1024px)
+      {  background-color:$color3;  }
+
+    .info-datos {                       // .info-datos(ul)
       display:flex;
-      justify-content:space-between;
+      justify-content:space-around;
       width:100%;
 
-      li{
-        font:lighter 1.6em "Roboto", Segoe  UI, Sans-Serif;/*letra fina 18px fuente Roboto*/
-        padding:10px;/*Margenes internos de lso Items*/
-        width:28%;/*Tamaño de los Items */
+      li {
+        font:lighter $fz16 $font;
+        padding:10px;                   // Margenes internos de los Items
+
+        span                            // Iconos
+        { margin-right:10px; }
       }
 
     }
 
   }
 
-}
-/*icons*/
-header .contenedor-info .info-datos li span {
-  margin-right:10px;
-  font-size:1em;/*tamaño de los icons*/
 }

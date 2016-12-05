@@ -10,7 +10,7 @@ header{
     @include from(1024px)
       {  background-color:$color3;  }
 
-    .info-datos {                       // .info-datos(ul)
+   .info-datos {                       // .info-datos(ul)
       display:flex;
       justify-content:space-around;
       width:100%;

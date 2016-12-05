@@ -22,60 +22,59 @@
       <header>
         <div class="grupo-total">
           <div class="caja-total">
+
+            <!-- boton de bar menu -->
+            <div class="menu_bar">
+              <!--Logo de SmartPone y Tablet-->
+              <a href="#" class="boton-bar"><span class="icon-mobile"></span><span class="icon-tablet"></span> Menu</a>
+              <!--Boton de manu-->
+              <div id="icon" onclick="myFunction(this)" class="icon-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+
             <!-- Información -->
             <div class="contenedor-info">
-              <!--Info-->
               <ul class="info-datos text-center">
                 <li><span class="icon-mobile"></span>VE: (+58)414 3648629</li>
                 <li><span class="icon-mail"></span>EMAIL: contacto@page.com</li>
                 <li><span class="icon-phone"></span>TEL: (+58)261 7290416  </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <!-- boton de bar menu -->
-        <div class="menu_bar">
-          <!--Logo de SmartPone y Tablet-->
-          <a href="#" class="boton-bar"><span class="icon-mobile"></span><span class="icon-tablet"></span> Menu</a>
-          <!--Boton de manu-->
-          <div id="icon" onclick="myFunction(this)" class="icon-menu">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </div>
 
+            <!--Slider(Principal)-->
+            <div id="slider">
+              <img src="core/img/slide/apostol-helimenas.jpg" alt="Apostol Helimenas Espina">
+              <img src="core/img/slide/tiempo-de-la-cosecha.jpg" alt="Ministerio El Tiempo de la Cosecha">
+              <img src="core/img/slide/ministerio-helimenas.jpg" alt="Pastor Helimenas Espina">
+            </div>
 
-
-        <!-- Menú -->
-        <nav id="menu" class="menu-adaptable">
-          <img src="core/img/logo.png" alt="Logo Tiempo de la Cosecha" class="logo"><!--logo-->
-          <h1>El Tiempo de la Cosecha</h1><!--titulo-->
-          <!--navegacion-->
-          <ul>
-            <li class="list"><a href="index.html"><span class="icon-home3"></span> Inicio</a></li>
-            <li class="list"><a href="nosotros.html"><span class="icon-price-tag"></span> Nosotros</a></li>
-            <li class="list"><a href="#"><span class="icon-video"></span> Enseñanzas</a></li>
-            <li class="list"><a href="#" class="openModal"><span class="icon-mail"></span> Contacto</a></li>
-            <!-- Sub-menu-->
-            <li id="sub-menu" class="list"><a href="#submenu"><span class="icon-dots-three-vertical"></span>Más<span class="caret icon-chevron-down"></span></a>
-              <ul class="children" name="submenu">
-                <li><a href="#">Escuela <span class="caret icon-dot-single"></span></a></li>
-                <li><a href="fundador.html">Fundador <span class="caret icon-dot-single"></span></a></li>
-                <li><a href="#">Galería <span class="caret icon-dot-single"></span></a></li>
-                <li><a href="#">Ministerios <span class="caret icon-dot-single"></span></a></li>
+            <!-- Menú -->
+            <nav id="menu" class="menu-adaptable">
+              <img src="core/img/logo.png" alt="Logo Tiempo de la Cosecha" class="logo"><!--logo-->
+              <h1>El Tiempo de la Cosecha</h1><!--titulo-->
+              <!--navegacion-->
+              <ul>
+                <li class="list"><a href="index.html"><span class="icon-home3"></span> Inicio</a></li>
+                <li class="list"><a href="nosotros.html"><span class="icon-price-tag"></span> Nosotros</a></li>
+                <li class="list"><a href="#"><span class="icon-video"></span> Enseñanzas</a></li>
+                <li class="list"><a href="#" class="openModal"><span class="icon-mail"></span> Contacto</a></li>
+                <!-- Sub-menu-->
+                <li id="sub-menu" class="list"><a href="#submenu"><span class="icon-dots-three-vertical"></span>Más<span class="caret icon-chevron-down"></span></a>
+                  <ul class="children" name="submenu">
+                    <li><a href="#">Escuela <span class="caret icon-dot-single"></span></a></li>
+                    <li><a href="fundador.html">Fundador <span class="caret icon-dot-single"></span></a></li>
+                    <li><a href="#">Galería <span class="caret icon-dot-single"></span></a></li>
+                    <li><a href="#">Ministerios <span class="caret icon-dot-single"></span></a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-        </nav>
+            </nav>
 
-        <!--Slider(Principal)-->
-        <div id="slider">
-          <img src="app/img/slider/Apostol-Helimenas.jpg" alt="Apostol Helimenas Espina">
-          <img src="app/img/slider/Tiempo-de-la-Cosecha.jpg" alt="Ministerio El Tiempo de la Cosecha">
-          <img src="app/img/slider/Ministerio.jpg" alt="Pastor Helimenas Espina">
+          </div>
         </div>
-
 
       </header>
 
@@ -287,7 +286,7 @@
     <script src="app/js/slider.js"></script>
     <script src="app/js/jquery.slides.js"></script>
     <script src="app/js/slider.js"></script>
-    <script src="app/js/analytics.js"></script>
+    <!-- <script src="app/js/analytics.js"></script> -->
     <script src="app/js/reproductores.js"></script>
     <script src="core/js/main.js"></script>
   </body>
